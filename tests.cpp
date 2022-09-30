@@ -31,5 +31,8 @@ TEST_CASE("Checking nextPrime function") {
 }//end test case for Task C
 
 TEST_CASE("Checking for counterPrime function") {
-
+	CHECK(countPrimes(16, 80) == 16);
+	CHECK(countPrimes(25, 35) == 2);
+	CHECK(countPrimes(1, 1000) == 168);
+	CHECK(countPrimes(0, 1000) == 168);
 }//end test case for task D

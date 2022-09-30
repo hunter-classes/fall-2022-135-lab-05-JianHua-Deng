@@ -50,6 +50,12 @@ int nextPrime(int number) {
 
 
 //Task D
-int counterPrimes(int a, int b) {
-
+int countPrimes(int start, int end) {
+	int count = 0;
+	for (int i = start; i <= end; i++) {
+		if (isPrime(i)) {
+			count++;
+		}//end condition
+	}//end for loop
+	return count;
 }//end counterPrimes method
