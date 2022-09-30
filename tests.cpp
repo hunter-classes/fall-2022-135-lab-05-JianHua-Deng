@@ -36,3 +36,12 @@ TEST_CASE("Checking for counterPrime function") {
 	CHECK(countPrimes(1, 1000) == 168);
 	CHECK(countPrimes(0, 1000) == 168);
 }//end test case for task D
+
+TEST_CASE("Test cases for isTwinPrime function") {
+	CHECK(isTwinPrime(17) == true);
+}//end test case for Task E
+
+//
+TEST_CASE("Test cases for nextTwinPrime function") {
+	CHECK(nextTwinPrime(15) == 17);
+}//end test case for Task F
