@@ -45,3 +45,9 @@ TEST_CASE("Test cases for isTwinPrime function") {
 TEST_CASE("Test cases for nextTwinPrime function") {
 	CHECK(nextTwinPrime(15) == 17);
 }//end test case for Task F
+
+TEST_CASE("Test cases for largestTwinPrime function") {
+	CHECK(largestTwinPrime(5, 18) == 17);
+	CHECK(largestTwinPrime(1, 31) == 31);
+	CHECK(largestTwinPrime(14, 16) == -1);
+}//end of task G

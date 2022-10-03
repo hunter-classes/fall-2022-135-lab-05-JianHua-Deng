@@ -79,7 +79,11 @@ int nextTwinPrime(int number) {
 
 //Task G
 int largestTwinPrime(int start, int end) {
-
-
-	return 0;
+	int largest = -1;
+	for (int i = start; i <= end; i++) {
+		if (isTwinPrime(i) && largest < i) {
+			largest = i;
+		}//end condition
+	}//end largestTwinPrime function
+	return largest;
 }//end method of largestTwinPrime
