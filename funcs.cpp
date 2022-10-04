@@ -81,18 +81,10 @@ int nextTwinPrime(int number) {
 int largestTwinPrime(int start, int end) {
 	int largest = -1;
 	for (int i = start; i <= end; i++) {
-<<<<<<< HEAD
-		if (isTwinPrime(i)) {
-			if (largest < i) {
+		if (isTwinPrime(i) && largest < i) {
 				largest = i;
-			}//end inner condition
 		}//end condition
 	}//end for loop
-=======
-		if (isTwinPrime(i) && largest < i) {
-			largest = i;
-		}//end condition
-	}//end largestTwinPrime function
->>>>>>> 39708b965516c13f5799ff8aa9242093149eac00
+
 	return largest;
 }//end method of largestTwinPrime
