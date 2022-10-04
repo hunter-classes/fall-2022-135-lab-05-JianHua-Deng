@@ -39,9 +39,22 @@ TEST_CASE("Checking for counterPrime function") {
 
 TEST_CASE("Test cases for isTwinPrime function") {
 	CHECK(isTwinPrime(17) == true);
+	CHECK(isTwinPrime(31) == true);
+	CHECK(isTwinPrime(16) == false);
+	CHECK(isTwinPrime(23) == false);
 }//end test case for Task E
 
-//
 TEST_CASE("Test cases for nextTwinPrime function") {
 	CHECK(nextTwinPrime(15) == 17);
+	CHECK(nextTwinPrime(101) == 103);
+	CHECK(nextTwinPrime(255) == 269);
+	CHECK(nextTwinPrime(81) == 101);
+	CHECK(nextTwinPrime(194) == 197);
 }//end test case for Task F
+
+TEST_CASE("Test cases for largestTwinPrime function") {
+	CHECK(largestTwinPrime(5, 18) == 17);
+	CHECK(largestTwinPrime(1, 31) == 31);
+	CHECK(largestTwinPrime(14, 16) == -1);
+	CHECK(largestTwinPrime(0, 146) == 139);
+}//end test case for Task G
