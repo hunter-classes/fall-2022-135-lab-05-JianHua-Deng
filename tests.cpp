@@ -46,15 +46,22 @@ TEST_CASE("Test cases for isTwinPrime function") {
 
 TEST_CASE("Test cases for nextTwinPrime function") {
 	CHECK(nextTwinPrime(15) == 17);
+<<<<<<< HEAD
 	CHECK(nextTwinPrime(101) == 103);
 	CHECK(nextTwinPrime(255) == 269);
 	CHECK(nextTwinPrime(81) == 101);
 	CHECK(nextTwinPrime(194) == 197);
+=======
+>>>>>>> 39708b965516c13f5799ff8aa9242093149eac00
 }//end test case for Task F
 
 TEST_CASE("Test cases for largestTwinPrime function") {
 	CHECK(largestTwinPrime(5, 18) == 17);
 	CHECK(largestTwinPrime(1, 31) == 31);
 	CHECK(largestTwinPrime(14, 16) == -1);
+<<<<<<< HEAD
 	CHECK(largestTwinPrime(0, 146) == 139);
 }//end test case for Task G
+=======
+}//end of task G
+>>>>>>> 39708b965516c13f5799ff8aa9242093149eac00
